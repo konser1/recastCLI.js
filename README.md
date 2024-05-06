@@ -13,7 +13,11 @@ A command line tools to build navigation mesh for game, which means you can auto
 $ npm install && npm run build
 
 
-$ npm install --python=python2.7 && npm run build --python=python2.7 
+$ npm install --python=python2.7 && npm run build --python=python2.7
+
+
+g++: error: unrecognized command line option ‘-std=gnu++14’
+这个错误很明显了，g++版本不够，在stackoverfow上，得知-std=c++14需要g++5.2以上，而centos默认的g++只有4.8.5。
 ```
 
 ## Usage
