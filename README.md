@@ -11,6 +11,9 @@ A command line tools to build navigation mesh for game, which means you can auto
 
 ```shell
 $ npm install && npm run build
+
+
+$ npm install --python=python2.7 && npm run build --python=python2.7 
 ```
 
 ## Usage
@@ -65,7 +68,6 @@ $ ./RecastCLI nav_test.obj 0 0 0 0 0 0 0 0 0 0 0 0 0 > navmesh.obj
 ***Powered by cafe team***
 
 
-npm install --python=python2.7 && npm run build --python=python2.7 
 
 
 
