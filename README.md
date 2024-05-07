@@ -22,6 +22,14 @@ g++: error: unrecognized command line option ‘-std=gnu++14’
 # sudo yum install devtoolset-7
 # scl enable devtoolset-7 bash
 #  npm install --python=python2.7 && npm run build --python=python2.7
+
+安装node8
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+yum install dnf
+sudo dnf install -y nodejs
+
+[root@1-55 recastCLI.js]# node -v
+v8.17.0
 ```
 
 ## Usage
