@@ -30,6 +30,12 @@ sudo dnf install -y nodejs
 
 [root@1-55 recastCLI.js]# node -v
 v8.17.0
+
+
+make编译master时报错的原因
+链接顺序问题：在命令行中，库文件应该放在源文件或对象文件之后。虽然在某些情况下编译器能够正确解析，但最佳实践是将库文件放在最后。请尝试调整命令的顺序，如下所示：
+g++ -I./recast -std=c++11 -w main/main.a -lstdc++ recast/recast.a -o RecastCLI
+
 ```
 
 ## Usage
