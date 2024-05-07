@@ -36,6 +36,10 @@ make编译master时报错的原因
 链接顺序问题：在命令行中，库文件应该放在源文件或对象文件之后。虽然在某些情况下编译器能够正确解析，但最佳实践是将库文件放在最后。请尝试调整命令的顺序，如下所示：
 g++ -I./recast -std=c++11 -w main/main.a -lstdc++ recast/recast.a -o RecastCLI
 
+修改目录下的makefile文件将
+$(CXX) $(CPPFLAGS) recast/recast.a main/main.a -o $(TARGET)
+改成
+$(CXX) $(CPPFLAGS) main/main.a recast/recast.a -o $(TARGET)
 ```
 
 ## Usage
